@@ -1,9 +1,9 @@
 Hello {{email}},
 
-Welcome to the <strong>BAC Tracker</strong> newsletter. We will inform you once our app is available.
+Welcome to the <strong>Alcohol Tracker</strong> newsletter. We will inform you once our app is available.
 
 Thank you for being patient.
 
 Kind regards,
 
-CEO BAC Tracker.
+CEO Alcohol Tracker.
