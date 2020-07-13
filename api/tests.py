@@ -16,8 +16,7 @@ class NewsLetterRecipientTestCase(TestCase):
 
     def test_newsletter_recipient_instance(self):
         ''' test to see if a newsletter recipient instance was created correctly '''
-        self.assertTrue(isinstance(
-            self.new_newsletter_recipient, NewsLetterRecipient))
+        self.assertTrue(isinstance(self.new_newsletter_recipient, NewsLetterRecipient))
 
     def test_save_newsletter_recipient(self):
         ''' test to see if a newsletter recipient was saved correctly '''
