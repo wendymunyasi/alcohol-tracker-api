@@ -1,0 +1,22 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#083232",
+    "titleBar.activeBackground": "#010606",
+    "titleBar.activeForeground": "#e7e7e7",
+    "activityBar.activeBackground": "#083232",
+    "activityBar.activeBorder": "#a51aa5",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#a51aa5",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#010606",
+    "statusBar.border": "#010606",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#083232",
+    "titleBar.border": "#010606",
+    "titleBar.inactiveBackground": "#01060699",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "python.pythonPath": "/home/burn/.local/share/virtualenvs/mysite-cfLRFF5r/bin/python",
+  "peacock.remoteColor": "#010606"
+}

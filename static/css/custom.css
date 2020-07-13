@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(../images/alcohol-alcoholic-background-beer-301692.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 100vh;
+}
+
+.container h2 {
+  line-height: 4rem;
+  font-size: 3rem;
+  text-shadow: .1rem .1rem .1rem  black;
+}
+
+.card {
+  opacity: .7;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.card p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+  .container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .card p {
+    font-size: .6rem;
+    line-height: 1rem;
+  }
+}
+
+
