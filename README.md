@@ -1,4 +1,4 @@
-#  BAC Tracker App.
+#  BAC Tracker App API.
 This is an API for storing client's email address for a BAC Tracker app and built using Python and Django Rest Framework.
 
 ##  Getting Started
