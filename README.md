@@ -3,6 +3,11 @@ This is is a backend api for storing client's email address for a BAC Tracker ap
 
 ##  Getting Started
 
+## Links
+
+* **API link** - https://alcohol-tracker-db-api.herokuapp.com/api/
+* **Website link** - https://alcohol-tracker-db-api.herokuapp.com/api/newsletter_recipients2/
+
 
 ###  Prerequisites and Installing
 You need to install the following software to have the app running on your local machine for development and testing purposes. Instructions on how to install will also be provided next to the software.
