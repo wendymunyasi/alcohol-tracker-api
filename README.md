@@ -1,5 +1,5 @@
 #  BAC Tracker App.
-This is is a backend api for storing client's email address for a BAC Tracker app and built using Django Rest Framework.
+This is is an API for storing client's email address for a BAC Tracker app and built using Django Rest Framework.
 
 ##  Getting Started
 
@@ -108,6 +108,6 @@ You can visit any of the two urls apart from admin url.
 
 To colloborate, reach me through my email address wendymunyasi@gmail.com.
 
-## Project Landing Page
+## Website Landing Page
 
 <img src="./static/images/landing.png">
