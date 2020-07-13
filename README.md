@@ -1,5 +1,5 @@
 #  BAC Tracker App.
-This is a web app that allows users to post their projects and have them voted for. Credentials for signing in are provided in the README and other important details about the app. The project has a backend api built using Django Rest Framework and a frontend built using Angular.
+This is is a backend api for storing client's email address for a BAC Tracker app and built using Django Rest Framework.
 
 ##  Getting Started
 
@@ -19,10 +19,6 @@ You need to install the following software to have the app running on your local
 
 
 ###  Running Tests
-The test classes are divided into ProjectTestCase, ProfileTestCase, RatingDesignTestCase, RatingContentTestCase and RatingUsabilityTestCase.
-
-Once you get the development server running, run the following command:
-`python3 manage.py test` which runs all the test cases one by one.
 
 Examples of tests are given below.
 
@@ -91,21 +87,21 @@ You can visit any of the two urls apart from admin url.
 
  
 ## CODEBEAT
-[![codebeat badge](https://codebeat.co/badges/caa288f9-214b-43e7-aefc-e158b3d26da9)](https://codebeat.co/projects/github-com-wendymunyasi-awards-ip7-master)
+[![codebeat badge](https://codebeat.co/badges/3ef0e830-4679-4852-a4c4-61df30f8b885)](https://codebeat.co/projects/github-com-wendymunyasi-bac-tracker-master)
 
 
 ## The following include the list of technologies used:
 
-**Python3.6**
-**Django 3**
-**Bootstrap**
-**PostgreSQL**
-**Django Rest Framework**
+  *  **Python3.6**
+  *  **Django 3**
+  *  **Bootstrap**
+  *  **PostgreSQL**
+  *  **Django Rest Framework**
 
 
 ## Collaborate
 
-To colloborate, reach me through my email address wendymunyasi@gmail.com
+To colloborate, reach me through my email address wendymunyasi@gmail.com.
 
 ## Project Landing Page
 
