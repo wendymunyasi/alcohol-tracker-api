@@ -412,6 +412,7 @@ section#notify .btn {
 section#footer {
   height: 11.688rem;
   background-color: #767A90;
+  overflow: hidden;
 }
 
 section#footer img {
