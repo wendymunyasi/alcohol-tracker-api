@@ -1,0 +1,338 @@
+/*--Global----------------------------------------------------------------*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* outline: 1px solid red; */
+}
+
+
+html {
+  box-sizing: inherit;
+
+}
+
+body {
+  width: 100%;
+  font-style: normal !important;
+  font-family: 'Lato', sans-serif !important;
+}
+
+
+/* start of hero section styles */
+section#hero__section {
+  background-image: url('../../assets/img/hero_image.png');
+  height: 100vh;
+}
+
+section#hero__section h1 {
+  width: 565px;
+  height: 134px;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 67px;
+  color: #643F19;
+  margin-left: 9%;
+}
+
+section#hero__section h1 span {
+  color: #E08114;
+}
+
+section#hero__section .hero__text1 p {
+  width: 465px;
+  height: 58px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 29px;
+  color: #823F19;
+  margin-left: 9%;
+}
+
+section#hero__section .hero__text2 p {
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 26px;
+  text-align: center;
+  color: #823F19;
+}
+
+/* end of hero setion styles */
+
+
+
+/* start of features section styles */
+section#features1 span {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 96.19%;
+  color: #643F19;
+}
+
+section#features1 .card {
+  background: #FBFBFB;
+  box-shadow: 0px 0px 10px rgba(178, 178, 178, 0.25);
+}
+
+section#features1 .card-title {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 26px;
+  color: #E08114;
+}
+
+section#features1 .card-text {
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 22px;
+  color: #643F19;
+}
+
+section#features2 h3 {
+  margin-left: 9%;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 29px;
+  color: #E08114;
+}
+
+section#features2 p.paragraph1 {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 24px;
+  color: #643F19;
+}
+
+section#features2 h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+}
+
+section#features2 h4.assistant {
+  color: #E08114;
+}
+
+section#features2 h4.challenges {
+  color: #E01414;
+}
+
+section#features2 h4.games {
+  color: #079426;
+}
+
+section#features2 h4.capture {
+  color: #147EE0;
+}
+
+section#features2 h4.translation {
+  color: #D609A9;
+}
+
+section#features2 p.paragraph2 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 19px;
+  color: #643F19;
+}
+
+/* end of features section styles */
+
+/* start of product images section styles */
+
+
+section#product__images h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 38px;
+  color: #E08114;
+  margin-top: 2rem;
+}
+
+section#product__images p {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 29px;
+  color: #643F19;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #E08114 !important;
+  background-color: #E08114;
+}
+
+
+@media screen and (max-width:768px) {
+  section#product__images h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 96.19%;
+  }
+
+  section#product__images p {
+    font-size: 20px;
+    line-height: 96.19%;
+  }
+
+  #carouselIndicators span.carousel-control-prev-icon,
+  #carouselIndicators span.carousel-control-next-icon {
+    display: none;
+  }
+
+}
+
+/* end of product images section styles */
+
+/* start of footer section styles */
+
+section#notify {
+  background: #FBF3EB;
+  height: 55vh;
+}
+
+section#notify h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 38px;
+  color: #643F19;
+
+}
+
+section#notify p {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 29px;
+  color: #E08114;
+}
+
+::placeholder {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 24px;
+  color: #CDCDCD;
+}
+
+section#notify .btn {
+  width: 214px;
+  height: 52px;
+
+  background: #E08114;
+  box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+  border-radius: 5px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 24px;
+}
+
+
+@media screen and (max-width:768px) {
+
+  section#notify {
+    background: #FBF3EB;
+    height: 45vh;
+  }
+
+  section#notify h2 {
+    font-size: 20px;
+    line-height: 96.19%;
+    margin-top: 1px !important;
+
+  }
+
+  section#notify p {
+    font-size: 15px;
+    line-height: 96.19%;
+    margin-top: .5rem !important;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    line-height: 96.19%;
+  }
+
+  section#notify .btn {
+    width: 93px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 96.19%;
+  }
+
+
+
+
+}
+
+
+/* end of footer section styles */
+
+
+/* * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  font-family: proxima nova, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  margin-top: 20em;
+  text-align: center;
+  
+}
+a.button {
+  background-color: red;
+  background-image: linear-gradient(to right, #E08114, #fff);
+  padding: 1em 3em;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+h1 {
+  color: black;
+  font-size: 80px;
+}
+p {
+  color: black;
+  padding: 1em 0 2em 0;
+  width: 80%;
+}
+.landing {
+  height: 1500px;
+  padding-left: 5em;
+  padding-top: 10em;
+}
+.scroll {
+  height: 100vh;
+  padding-left: 5em;
+  padding-top: 10em;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to right, #E08114, #fff);
+} */
+
+
+
+
+/* start of carousel styles *
+
+
+
+/* end of carousel styles */
