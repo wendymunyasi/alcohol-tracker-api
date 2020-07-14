@@ -19,12 +19,10 @@ export class LandingComponent implements OnInit {
   constructor(
     public fb: FormBuilder,
     public apiService: ApiService,
-    private http: HttpClient
   ) {
     this.newsletterForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]]
     })
-    this.http = http
   }
 
   get f() { return this.newsletterForm.controls; }
