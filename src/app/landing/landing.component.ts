@@ -46,7 +46,7 @@ export class LandingComponent implements OnInit {
 
       Swal.fire({
         title: "Good job!",
-        text: "You email was posted!",
+        text: "You email was posted! Check your inbox.",
         icon: "success",
       });
   }

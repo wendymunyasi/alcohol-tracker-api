@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif !important;
   font-style: normal !important;
+  /* outline: 1px solid red; */
 }
 
 
@@ -20,6 +21,7 @@ body {
   width: 100%;
   font-style: normal !important;
   font-family: 'Lato', sans-serif !important;
+  
 }
 
 
@@ -210,6 +212,11 @@ section#notify p {
   color: #E08114;
 }
 
+
+input {
+  width: 38.875rem;
+}
+
 ::placeholder {
   font-weight: normal;
   font-size: 25px;
@@ -251,6 +258,7 @@ section#notify .btn {
     line-height: 96.19%;
     margin-top: .5rem !important;
   }
+
 
   ::placeholder {
     font-size: 12px;

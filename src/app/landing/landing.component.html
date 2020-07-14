@@ -21,11 +21,11 @@
   
       <!-- start of carousel -->
       <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        <ol class="carousel-indicators mt-5">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active" style="fill: red"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1" style="fill: red"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2" style="fill: red"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3" style="fill: red"></li>
         </ol>
         <!-- start of carousel inner -->
         <div class="carousel-inner" role="listbox">
@@ -33,10 +33,13 @@
           <div class="carousel-item active">
             <div class="row text-center">
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <div class="text-center">
+                  <img src="../../assets/img/white_rectangle.png" height="600" width="300" alt="" srcset="" class="img-fluid">
+
+                </div>
               </div>
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -45,10 +48,10 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -57,10 +60,10 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -69,10 +72,10 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-6 col-sm-6 col-md-6 d-flex justify-content-center">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
               <div class="col-6 col-sm-6 col-md-6">
-                <img src="../../assets/img/white_rectangle.png" alt="" srcset="" class="img-fluid">
+                <img src="../../assets/img/white_rectangle.png"  height="600" width="300"alt="" srcset="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -80,7 +83,7 @@
         </div>
         <!-- end of carousel inner -->
         <!-- start of previous and next buttons -->
-        <a href="#carouselIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+        <a href="#carouselIndicators" class="carousel-control-prev text-left" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
         <a href="#carouselIndicators" class="carousel-control-next" role="button" data-slide="next">
@@ -96,12 +99,11 @@
   <section id="notify" class="mt-5 pt-3">
     <h2 class="text-center mt-5">Lauch coming soon!</h2>
     <p class="text-center mt-5">Sign up to get notified first</p>
-    <div class="row mt-5">
-      <div class="col-md-3"></div>
-      <div class="col-12 col-sm-12 col-md-6">
+
+      <div class="mt-5">
         <form  [formGroup]="newsletterForm" (ngSubmit)="registerData()">
-          <div class="form-group">
-            <input type="email" class="form-control" formControlName="email" id="inputemail" aria-describedby="emailHelp"
+          <div class="form-group text-center">
+            <input type="email" class="form-control mx-auto" formControlName="email" id="inputemail" aria-describedby="emailHelp"
               placeholder="Email address">
           </div>
           <div class="text-center mt-5">
@@ -109,6 +111,6 @@
           </div>
         </form>
       </div>
-      <div class="col-md-3"></div>
-    </div>
+   
+
   </section>
