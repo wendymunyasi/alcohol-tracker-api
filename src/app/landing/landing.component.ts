@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../api.service';
-import Swal from 'sweetalert';
+import swal from 'sweetalert';
 
 
 @Component({
@@ -46,7 +46,7 @@ export class LandingComponent implements OnInit {
         }
       )
 
-      Swal({
+      swal({
         title: "Good job!",
         text: "You email was posted!",
         icon: "success",
