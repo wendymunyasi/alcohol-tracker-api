@@ -8,12 +8,14 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif !important;
   font-style: normal !important;
+  overflow-x: hidden !important;
   /* outline: 1px solid red; */
 }
 
 
 html {
   box-sizing: inherit;
+  overflow-x: hidden !important;
 
 }
 
@@ -21,7 +23,8 @@ body {
   width: 100%;
   font-style: normal !important;
   font-family: 'Lato', sans-serif !important;
-  
+  overflow-x: hidden !important;
+
 }
 
 
@@ -29,45 +32,144 @@ body {
 section#hero__section {
   background-image: url('../../assets/img/hero_image.png');
   height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: 50% 50%;
+  background-position: center center;
+}
+
+section#hero__section img.logo {
+  margin-top: 58px;
+}
+
+section#hero__section img.beer__phone {
+  margin-top: 12.5rem;
 }
 
 section#hero__section h1 {
-  width: 565px;
-  height: 134px;
+  width: 600px;
   font-weight: 500;
   font-size: 70px;
   line-height: 67px;
   color: #643F19;
-  margin-left: 9%;
+  overflow-y: hidden;
 }
 
 section#hero__section h1 span {
   color: #E08114;
 }
 
+section#hero__section .hero__text1 {
+  margin-top: 9.375rem;
+}
+
 section#hero__section .hero__text1 p {
-  width: 465px;
-  height: 58px;
+  width: 500px;
   font-weight: normal;
   font-size: 30px;
   line-height: 29px;
+  height: 63px;
   color: #823F19;
-  margin-left: 9%;
+  margin-top: 4.125rem;
 }
+
+section#hero__section .hero__text2 {
+  margin-top: 10.563rem;
+}
+
 
 section#hero__section .hero__text2 p {
   font-weight: 300;
   font-size: 27px;
   line-height: 26px;
+  height: 30px;
   text-align: center;
   color: #823F19;
+  overflow: hidden;
+}
+
+section#hero__section span.here {
+
+  border: 1px solid #DCCBBA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 9px #7A7A7A;
+  margin-left: .5rem;
+}
+
+@media screen and (max-width:768px) {
+
+  section#hero__section {
+    /* height: 80vh; */
+  }
+
+  section#hero__section img.logo {
+    width: 132px;
+    margin-top: 40px;
+  }
+
+  section#hero__section .row {
+    flex-direction: column-reverse;
+  }
+
+  section#hero__section .hero__text1 {
+    margin-top: 15%;
+  }
+
+  section#hero__section h1 {
+    width: 245px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 96.19%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+  section#hero__section .hero__text1 p {
+    width: 300px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 96.19%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  section#hero__section img.beer__phone {
+    margin-top: 3.5rem;
+    width: 90px;
+  }
+
+  section#hero__section .hero__text2 {
+    margin-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  section#hero__section .hero__text2 p {
+    height: 35px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 106.69%;
+  }
 }
 
 /* end of hero setion styles */
 
-
-
 /* start of features section styles */
+section#features1 {
+  padding-bottom: 108px;
+}
+
+section#features1 .features__logo__text {
+  margin-top: 7.313rem;
+  margin-bottom: 5rem;
+}
+
+
 section#features1 span {
   font-weight: normal;
   font-size: 40px;
@@ -78,75 +180,96 @@ section#features1 span {
 section#features1 .card {
   background: #FBFBFB;
   box-shadow: 0px 0px 10px rgba(178, 178, 178, 0.25);
+  width: 90%;
 }
 
 section#features1 .card-title {
   font-weight: 600;
   font-size: 27px;
   line-height: 26px;
+  height: 26px;
+  overflow: hidden;
   color: #E08114;
+  margin-top: 3.125rem;
+  margin-bottom: 3.5rem;
 }
 
 section#features1 .card-text {
   font-weight: normal;
   font-size: 23px;
   line-height: 22px;
+  height: 135px;
   color: #643F19;
 }
 
-section#features2 h3 {
-  margin-left: 9%;
+section#features2 {
+  background: linear-gradient(270deg, #E08114 9.1%, #E08114 61.08%, rgba(224, 129, 20, 0) 255.39%);
+  height: 834px;
+}
+
+section#features2 .container {
+  padding-top: 49px;
+}
+
+section#features2 .container h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 29px;
-  color: #E08114;
+  overflow: hidden;
 }
 
-section#features2 p.paragraph1 {
+section#features2 .container p.paragraph1 {
   font-weight: normal;
   font-size: 25px;
-  line-height: 24px;
-  color: #643F19;
+  line-height: 29px;
+  margin-top: 25px;
+  height: 100px;
 }
 
-section#features2 h4 {
+section#features2 .container img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+section#features2 .container h4 {
   font-weight: 600;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 20px;
+  margin-bottom: 19px;
+  height: 21px;
+  overflow: hidden;
 }
 
-section#features2 h4.assistant {
-  color: #E08114;
-}
 
-section#features2 h4.challenges {
-  color: #E01414;
-}
-
-section#features2 h4.games {
-  color: #079426;
-}
-
-section#features2 h4.capture {
-  color: #147EE0;
-}
-
-section#features2 h4.translation {
-  color: #D609A9;
-}
-
-section#features2 p.paragraph2 {
+section#features2 .container p.paragraph2 {
   font-weight: 300;
   font-size: 20px;
   line-height: 19px;
-  color: #643F19;
+  margin-bottom: 19px;
+  height: 97px;
+}
+
+@media screen and (max-width:768px) {
+  section#features1 .features__logo__text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  section#features1 .features__logo__text img {
+    width: 132px;
+  }
+
+  section#features1 span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 96.19%;
+    margin-left: auto;
+  }
 }
 
 /* end of features section styles */
 
 /* start of product images section styles */
-
-
 section#product__images h2 {
   font-weight: bold;
   font-size: 40px;
@@ -160,6 +283,8 @@ section#product__images p {
   font-size: 30px;
   line-height: 29px;
   color: #643F19;
+  height: 130px;
+  width: 709px;
 }
 
 .carousel-control-prev-icon,
@@ -194,7 +319,7 @@ section#product__images p {
 
 section#notify {
   background: #FBF3EB;
-  height: 55vh;
+  height: 35rem;
 }
 
 section#notify h2 {
@@ -202,6 +327,7 @@ section#notify h2 {
   font-size: 40px;
   line-height: 38px;
   color: #643F19;
+  margin-top: 116px;
 
 }
 
@@ -215,6 +341,9 @@ section#notify p {
 
 input {
   width: 38.875rem;
+  height: 3.25rem;
+  background-color: #FBF3EB;
+  border-color: #CDCDCD;
 }
 
 ::placeholder {
@@ -222,6 +351,8 @@ input {
   font-size: 25px;
   line-height: 24px;
   color: #CDCDCD;
+  margin-left: 12rem;
+  padding-left: 2.4rem;
 }
 
 section#notify .btn {
@@ -249,7 +380,7 @@ section#notify .btn {
   section#notify h2 {
     font-size: 20px;
     line-height: 96.19%;
-    margin-top: 1px !important;
+    margin-top: .5px !important;
 
   }
 
@@ -273,74 +404,49 @@ section#notify .btn {
     line-height: 96.19%;
   }
 
-
-
-
 }
 
+/* end of notify section styles */
+
+/* start of footer section styles */
+section#footer {
+  height: 11.688rem;
+  background-color: #767A90;
+}
+
+section#footer img {
+  margin-left: 9%;
+  margin-top: 2.063rem;
+}
+
+section#footer hr {
+  color: #ffff;
+  width: 622px;
+  height: 0px;
+  border: 0.5px solid #FFFFFF;
+  margin-top: 1%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+}
+
+section#footer .iconify {
+  color: white;
+  height: 28px;
+  width: 28px;
+}
+
+section#footer p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 96.19%;
+  color: #D6D6D6;
+}
+
+section#footer .copyright {
+  margin-top: 22px;
+}
 
 /* end of footer section styles */
-
-
-/* * {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-html {
-  font-family: proxima nova, sans-serif;
-}
-body {
-  width: 100%;
-  height: 100vh;
-}
-.wrapper {
-  width: 100%;
-  margin-top: 20em;
-  text-align: center;
-  
-}
-a.button {
-  background-color: red;
-  background-image: linear-gradient(to right, #E08114, #fff);
-  padding: 1em 3em;
-  border-radius: 100px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-h1 {
-  color: black;
-  font-size: 80px;
-}
-p {
-  color: black;
-  padding: 1em 0 2em 0;
-  width: 80%;
-}
-.landing {
-  height: 1500px;
-  padding-left: 5em;
-  padding-top: 10em;
-}
-.scroll {
-  height: 100vh;
-  padding-left: 5em;
-  padding-top: 10em;
-}
-
-.btn-primary {
-  background-image: linear-gradient(to right, #E08114, #fff);
-} */
-
-
-
-
-/* start of carousel styles *
-
-
-
-/* end of carousel styles */
