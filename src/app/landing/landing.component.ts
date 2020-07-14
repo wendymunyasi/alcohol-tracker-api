@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../api.service';
+import Swal from 'sweetalert';
 
 
 @Component({
@@ -44,6 +45,12 @@ export class LandingComponent implements OnInit {
           alert(`The unknown error has occurred: ${error}`);
         }
       )
+
+      Swal({
+        title: "Good job!",
+        text: "You email was posted!",
+        icon: "success",
+      });
   }
 
 
