@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../api.service';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -43,8 +42,9 @@ export class LandingComponent implements OnInit {
           alert(`The unknown error has occurred: ${error}`);
         }
       )
+      this.newsletterForm.reset();
 
-      swal({
+      Swal.fire({
         title: "Good job!",
         text: "You email was posted!",
         icon: "success",
