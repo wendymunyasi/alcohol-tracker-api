@@ -319,7 +319,7 @@ section#product__images p {
 
 section#notify {
   background: #FBF3EB;
-  height: 35rem;
+  height: 75vh;
 }
 
 section#notify h2 {
@@ -374,7 +374,7 @@ section#notify .btn {
 
   section#notify {
     background: #FBF3EB;
-    height: 45vh;
+    height: 60vh;
   }
 
   section#notify h2 {
