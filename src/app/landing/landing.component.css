@@ -27,6 +27,11 @@ body {
 
 }
 
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 /* start of hero section styles */
 section#hero__section {
@@ -164,25 +169,25 @@ section#features2 {
   height: 834px;
 }
 
-section#features2 .container {
+section#features2 .container-fluid {
   padding-top: 49px;
 }
 
-section#features2 .container h3 {
+section#features2 .container-fluid h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 29px;
   overflow: hidden;
 }
 
-section#features2 .container .heading-underline {
+section#features2 .container-fluid .heading-underline {
   width: 27px;
   height: 3px;
   background: #FFFFFF;
   margin-top: 0.75rem;
 }
 
-section#features2 .container p.paragraph1 {
+section#features2 .container-fluid p.paragraph1 {
   font-weight: normal;
   font-size: 25px;
   line-height: 29px;
@@ -190,20 +195,20 @@ section#features2 .container p.paragraph1 {
   height: 100px;
 }
 
-section#features2 .container img {
+section#features2 .container-fluid img {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-section#features2 .container img.assistant__vector2,
-section#features2 .container img.challenges__vector2,
-section#features2 .container img.games__vector2,
-section#features2 .container img.screen__capture__vector2,
-section#features2 .container img.translation__vector2 {
+section#features2 .container-fluid img.assistant__vector2,
+section#features2 .container-fluid img.challenges__vector2,
+section#features2 .container-fluid img.games__vector2,
+section#features2 .container-fluid img.screen__capture__vector2,
+section#features2 .container-fluid img.translation__vector2 {
   display: none;
 }
 
-section#features2 .container h4 {
+section#features2 .container-fluid h4 {
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
@@ -213,7 +218,7 @@ section#features2 .container h4 {
 }
 
 
-section#features2 .container p.paragraph2 {
+section#features2 .container-fluid p.paragraph2 {
   font-weight: 300;
   font-size: 20px;
   line-height: 19px;
@@ -369,6 +374,14 @@ section#footer .copyright {
 
 /* START OF MEDIA QUERIES */
 
+
+@media screen and (min-width:2000px) {
+  section#hero__section img.logo {
+    margin-top: 58px;
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (min-width:992px) {
 
   section#hero__section img.beer__phone {
@@ -505,16 +518,16 @@ section#footer .copyright {
     overflow: hidden !important;
   }
 
-  section#features2 .container p.paragraph1 {
+  section#features2 .container-fluid p.paragraph1 {
     height: 70%;
     overflow: hidden;
   }
 
-  section#features2 .container p.paragraph2 {
+  section#features2 .container-fluid p.paragraph2 {
     height: 129px;
   }
 
-  section#features2 .container .row .col-md-6 .row .vectors {
+  section#features2 .container-fluid .row .col-md-6 .row .vectors {
     padding-left: 1% !important;
     padding-right: 1% !important;
     overflow: hidden;
@@ -614,7 +627,7 @@ section#footer .copyright {
     text-align: center !important;
   }
 
-  section#features2 .container .heading-underline {
+  section#features2 .container-fluid .heading-underline {
     height: 3px;
     left: 173px;
     background: #E08114;
@@ -651,11 +664,11 @@ section#footer .copyright {
     overflow: hidden;
   }
 
-  /* section#features2 .container {
+  /* section#features2 .container-fluid {
     padding-top: 49px;
   } */
 
-  section#features2 .container h3 {
+  section#features2 .container-fluid h3 {
     font-weight: 600;
     font-size: 30px;
     line-height: 96.19%;
@@ -663,7 +676,7 @@ section#footer .copyright {
     color: #E08114;
   }
 
-  section#features2 .container p.paragraph1 {
+  section#features2 .container-fluid p.paragraph1 {
     font-size: 20px;
     line-height: 96.19%;
 
@@ -673,46 +686,46 @@ section#footer .copyright {
     height: 100%;
   }
 
-  section#features2 .container p.paragraph2 {
+  section#features2 .container-fluid p.paragraph2 {
     font-weight: 300;
     font-size: 15px;
     line-height: 96.19%;
     color: #643F19;
   }
 
-  section#features2 .container .row .col-md-6 .row .vectors {
+  section#features2 .container-fluid .row .col-md-6 .row .vectors {
     padding-left: .5rem !important;
     padding-right: .5rem !important;
   }
 
-  section#features2 .container img {
+  section#features2 .container-fluid img {
     /* margin-top: 25px;
     margin-bottom: 25px; */
     height: 28px;
     width: 28px;
   }
 
-  section#features2 .container img.assistant__vector,
-  section#features2 .container img.challenges__vector,
-  section#features2 .container img.games__vector,
-  section#features2 .container img.screen__capture__vector,
-  section#features2 .container img.translation__vector {
+  section#features2 .container-fluid img.assistant__vector,
+  section#features2 .container-fluid img.challenges__vector,
+  section#features2 .container-fluid img.games__vector,
+  section#features2 .container-fluid img.screen__capture__vector,
+  section#features2 .container-fluid img.translation__vector {
     display: none;
   }
 
-  section#features2 .container img.assistant__vector2,
-  section#features2 .container img.challenges__vector2,
-  section#features2 .container img.games__vector2,
-  section#features2 .container img.screen__capture__vector2,
-  section#features2 .container img.translation__vector2 {
+  section#features2 .container-fluid img.assistant__vector2,
+  section#features2 .container-fluid img.challenges__vector2,
+  section#features2 .container-fluid img.games__vector2,
+  section#features2 .container-fluid img.screen__capture__vector2,
+  section#features2 .container-fluid img.translation__vector2 {
     display: initial;
   }
 
-  section#features2 .container img.challenges__vector {
+  section#features2 .container-fluid img.challenges__vector {
     fill: #E01414;
   }
 
-  section#features2 .container h4 {
+  section#features2 .container-fluid h4 {
     font-size: 17px;
     line-height: 96.19%;
     font-weight: 600;
@@ -721,27 +734,27 @@ section#footer .copyright {
     overflow: hidden; */
   }
 
-  section#features2 .container h4.assistant {
+  section#features2 .container-fluid h4.assistant {
     color: #E08114;
   }
 
-  section#features2 .container h4.challenges {
+  section#features2 .container-fluid h4.challenges {
     color: #E01414;
   }
 
-  section#features2 .container h4.games {
+  section#features2 .container-fluid h4.games {
     color: #079426;
   }
 
-  section#features2 .container h4.capture {
+  section#features2 .container-fluid h4.capture {
     color: #147EE0;
   }
 
-  section#features2 .container h4.translation {
+  section#features2 .container-fluid h4.translation {
     color: #D609A9;
   }
 
-  section#features2 .container p.translation {
+  section#features2 .container-fluid p.translation {
     font-size: 15px;
     line-height: 96.19%;
     /* margin-bottom: 19px;
@@ -909,23 +922,23 @@ section#footer .copyright {
     min-height: 135px;
   }
 
-  section#features2 .container h4 {
+  section#features2 .container-fluid h4 {
     font-size: 13px;
     line-height: 96.19%;
     font-weight: 600;
     height: 21px !important;
   }
 
-  section#features2 .container h3 {
+  section#features2 .container-fluid h3 {
     font-size: 25px;
   }
 
-  section#features2 .container p.paragraph1 {
+  section#features2 .container-fluid p.paragraph1 {
     font-size: 15px;
     line-height: 96.19%;
   }
 
-  section#features2 .container p.paragraph2 {
+  section#features2 .container-fluid p.paragraph2 {
     font-size: 13px;
   }
 
