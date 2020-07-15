@@ -153,6 +153,21 @@ section#hero__section span.here {
   }
 }
 
+@media screen and (max-width:320px) {
+  section#hero__section h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  section#hero__section .hero__text1 p {
+    width: 100%;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+}
+
 /* end of hero setion styles */
 
 /* start of features section styles */
@@ -227,6 +242,14 @@ section#features2 .container img {
   margin-bottom: 25px;
 }
 
+section#features2 .container img.assistant__vector2,
+section#features2 .container img.challenges__vector2,
+section#features2 .container img.games__vector2,
+section#features2 .container img.screen__capture__vector2,
+section#features2 .container img.translation__vector2 {
+  display: none;
+}
+
 section#features2 .container h4 {
   font-weight: 600;
   font-size: 20px;
@@ -248,7 +271,7 @@ section#features2 .container p.paragraph2 {
 @media screen and (max-width:768px) {
 
   section#features1 {
-    padding-bottom: 84px;
+    padding-bottom: 0px;
   }
 
   section#features1 .features__logo__text {
@@ -261,8 +284,11 @@ section#features2 .container p.paragraph2 {
   }
 
   section#features1 .card {
-    padding-bottom: .5px;
+    padding-bottom: .1px;
     margin-bottom: 1rem;
+    /* width: auto; */
+    /* height: 373px; */
+    overflow: hidden;
   }
 
   section#features1 h1 {
@@ -290,10 +316,11 @@ section#features2 .container p.paragraph2 {
   }
 
   section#features2 {
-    background: linear-gradient(270deg, #E08114 9.1%, #E08114 61.08%, rgba(224, 129, 20, 0) 255.39%);
+    background: #ffffff;
     height: 834px;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    overflow: hidden;
   }
 
   /* section#features2 .container {
@@ -317,11 +344,18 @@ section#features2 .container p.paragraph2 {
     color: #643F19;
   }
 
+  section#features2 .container p.paragraph2 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 96.19%;
+    color: #643F19;
+  }
+
   section#features2 .container .row .col-md-6 .row .vectors {
     padding-left: .5rem !important;
     padding-right: .5rem !important;
   }
-  
+
   section#features2 .container img {
     /* margin-top: 25px;
     margin-bottom: 25px; */
@@ -329,15 +363,25 @@ section#features2 .container p.paragraph2 {
     width: 28px;
   }
 
-  section#features2 .container img.assistant__vector {
-    color: #E08114 !important;
+  section#features2 .container img.assistant__vector,
+  section#features2 .container img.challenges__vector,
+  section#features2 .container img.games__vector,
+  section#features2 .container img.screen__capture__vector,
+  section#features2 .container img.translation__vector {
+    display: none;
+  }
+
+  section#features2 .container img.assistant__vector2,
+  section#features2 .container img.challenges__vector2,
+  section#features2 .container img.games__vector2,
+  section#features2 .container img.screen__capture__vector2,
+  section#features2 .container img.translation__vector2 {
+    display: initial;
   }
 
   section#features2 .container img.challenges__vector {
     fill: #E01414;
   }
-
-
 
   section#features2 .container h4 {
     font-size: 17px;
@@ -348,12 +392,78 @@ section#features2 .container p.paragraph2 {
     overflow: hidden; */
   }
 
+  section#features2 .container h4.assistant {
+    color: #E08114;
+  }
 
-  section#features2 .container p.paragraph2 {
+  section#features2 .container h4.challenges {
+    color: #E01414;
+  }
+
+  section#features2 .container h4.games {
+    color: #079426;
+  }
+
+  section#features2 .container h4.capture {
+    color: #147EE0;
+  }
+
+  section#features2 .container h4.translation {
+    color: #D609A9;
+  }
+
+  section#features2 .container p.translation {
     font-size: 15px;
     line-height: 96.19%;
     /* margin-bottom: 19px;
     height: 97px; */
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  section#features1 h1 {
+    text-align: center !important;
+    font-size: 5px !important;
+    margin-top: 4%;
+  }
+
+  section#features1 .card img {
+    height: 100%;
+    width: 100%;
+  }
+
+  section#features1 .card-title {
+    font-size: 14px;
+    line-height: 96.19%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  section#features1 .card-text {
+    font-size: 15px;
+    line-height: 96.19%;
+    min-height: 135px;
+  }
+
+  section#features2 .container h4 {
+    font-size: 13px;
+    line-height: 96.19%;
+    font-weight: 600;
+    height: 21px !important;
+  }
+
+  section#features2 .container h3 {
+    font-size: 25px;
+  }
+
+  section#features2 .container p.paragraph1 {
+    font-size: 15px;
+    line-height: 96.19%;
+  }
+
+  section#features2 .container p.paragraph2 {
+    font-size: 13px;
   }
 }
 
@@ -404,7 +514,7 @@ section#product__images img.red__rectangle {
 
   section#product__images img {
     width: 106px;
-    height: 229px
+    height: 229px;
   }
 
   section#product__images img.white__rectangle {
@@ -419,7 +529,19 @@ section#product__images img.red__rectangle {
   .carousel-indicators li {
     display: none;
   }
+}
 
+@media screen and (max-width:320px) {
+  section#product__images h2 {
+    font-size: 25px;
+    line-height: 96.19%;
+  }
+
+  section#product__images p {
+    font-size: 15px;
+    line-height: 96.19%;
+    width: 100%;
+  }
 }
 
 /* end of product images section styles */
@@ -447,7 +569,6 @@ section#notify p {
   color: #E08114;
 }
 
-
 input {
   width: 38.875rem;
   height: 3.25rem;
@@ -467,11 +588,9 @@ input {
 section#notify .btn {
   width: 214px;
   height: 52px;
-
   background: #E08114;
   box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
   border-radius: 5px;
-
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -492,7 +611,6 @@ section#notify .btn {
     line-height: 96.19%;
     margin-top: 42px !important;
     height: 22px;
-
   }
 
   section#notify p {
@@ -509,7 +627,6 @@ section#notify .btn {
     background-color: #FBF3EB;
     border-color: #CDCDCD;
   }
-
 
   ::placeholder {
     font-size: 12px;
@@ -531,6 +648,12 @@ section#notify .btn {
     line-height: 96.19%;
   }
 
+}
+
+@media screen and (max-width:320px) {
+  input {
+    width: 100%;
+  }
 }
 
 /* end of notify section styles */
