@@ -15,6 +15,7 @@ gunicorn = "*"
 psycopg2 = "*"
 python-decouple = "*"
 whitenoise = "*"
+django-bootstrap4 = "*"
 
 [requires]
 python_version = "3.6"

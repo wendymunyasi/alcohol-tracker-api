@@ -4,7 +4,7 @@ from django.conf import settings
 
 
 def send_message_email(email, receiver):
-    subject = 'Alcohol Limiter Newsletter'
+    subject = 'Alcohol Tracker Newsletter'
     sender = settings.EMAIL_HOST_USER
 
     text_content = render_to_string('email/message.txt', {"email": email})

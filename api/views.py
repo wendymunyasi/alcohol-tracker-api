@@ -7,6 +7,8 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from.models import NewsLetterRecipient
 from django.views.generic.list import ListView
+from django.views.generic import CreateView
+from .forms import NewsLetterForm
 
 
 @api_view(['GET', 'POST'])
@@ -44,7 +46,6 @@ def Recipients(request):
 
     return Response({'message': 'Bad Request'}, status=status.HTTP_400_BAD_REQUEST)
 
-
 class NewsletterRecipientsListView(ListView):
     
     model = NewsLetterRecipient
@@ -52,4 +53,12 @@ class NewsletterRecipientsListView(ListView):
     context_object_name = 'recipients'
     ordering = ['-date_registered']
     paginate_by = 4
+    
+
+class NewsletterRecipientCreateView(CreateView):
+    
+    model = NewsLetterRecipient
+    fields = ['email']
+    template_name = 'newsletterrecipient_form.html'
+    
     
