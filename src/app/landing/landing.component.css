@@ -21,6 +21,7 @@ html {
 
 body {
   width: 100%;
+  height: 100%;
   font-style: normal !important;
   font-family: 'Lato', sans-serif !important;
   overflow-x: hidden !important;
@@ -37,7 +38,6 @@ body {
 section#hero__section {
   background-image: url('../../assets/img/hero_image.png');
   height: 100vh;
-  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -247,10 +247,6 @@ section#product__images p {
   width: 709px;
 }
 
-section#product__images img.red__rectangle {
-  display: none;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   color: #E08114 !important;
@@ -265,7 +261,8 @@ section#product__images img.red__rectangle {
 
 section#notify {
   background: #FBF3EB;
-  height: 75vh;
+  height: 40rem;
+  margin-bottom: 0%;
 }
 
 section#notify h2 {
@@ -385,8 +382,11 @@ section#footer .copyright {
 @media screen and (min-width:992px) {
 
   section#hero__section img.beer__phone {
-    width: 80% !important;
+    width: 70% !important;
+    margin-top: 8.5rem;
+
   }
+
 
   section#hero__section h1 {
     width: 600px;
@@ -787,13 +787,6 @@ section#footer .copyright {
     height: 229px;
   }
 
-  section#product__images img.white__rectangle {
-    display: none;
-  }
-
-  section#product__images img.red__rectangle {
-    display: initial;
-  }
 
   .carousel-indicators li {
     display: none;
