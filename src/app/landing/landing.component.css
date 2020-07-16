@@ -9,7 +9,7 @@
   font-family: 'Lato', sans-serif !important;
   font-style: normal !important;
   overflow-x: hidden !important;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 
@@ -368,7 +368,7 @@ section#footer .copyright {
   }
 
   section#hero__section img.beer__phone {
-    width: 60% !important;
+    width: 80% !important;
     margin-top: 8.5rem;
 
   }
@@ -382,7 +382,7 @@ section#footer .copyright {
   }
 
   section#hero__section img.beer__phone {
-    width: 60% !important;
+    width: 70% !important;
     margin-top: 8.5rem;
 
   }
