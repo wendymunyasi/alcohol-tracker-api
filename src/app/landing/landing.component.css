@@ -378,7 +378,7 @@ section#footer .copyright {
 @media screen and (min-width:992px) {
 
   section#hero__section {
-    height: 100%;
+    height: 100% !important;
   }
 
   section#hero__section img.beer__phone {
