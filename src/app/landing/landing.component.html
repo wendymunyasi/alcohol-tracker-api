@@ -12,7 +12,8 @@
           <p>Keep track and control your alcohol consumption daily.</p>
         </div>
         <div class="hero__text2 wow bounceIn">
-          <p>Be the first to get notified on app release <span class="here"><a href="#notify" class="here2" style="color: #643F19;">
+          <p>Be the first to get notified on app release <span class="here"><a href="#notify" class="here2"
+                style="color: #643F19;">
                 here</a></span> </p>
         </div>
       </div>
@@ -86,7 +87,8 @@
     <div class="heading-underline wow slideInLeft"></div>
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6" style="overflow: hidden;">
-        <p class="paragraph1 wow slideInLeft">We have provided some solutions to the alcohol comsumotion habit with these features which
+        <p class="paragraph1 wow slideInLeft">We have provided some solutions to the alcohol comsumotion habit with
+          these features which
           also limit drinking.
         </p>
       </div>
@@ -148,7 +150,8 @@
       <div class="col-md-3"></div>
       <div class="col-md-6">
         <div style="display: inline-block;" style="overflow: hidden;" class="product__images_p">
-          <p class="text-center wow fadeInUpBig">Product images to convince you on how the app looks like. Enjoy the product features
+          <p class="text-center wow fadeInUpBig">Product images to convince you on how the app looks like. Enjoy the
+            product features
             and
             live a better life with ease.</p>
         </div>
@@ -174,11 +177,19 @@
               <div class="text-center" style="overflow-y: hidden;">
                 <img src="../../assets/img/screen1.png" height="600" width="300" alt="image" srcset=""
                   class="img-fluid white__rectangle popup wow flipInY" style="cursor: pointer;">
+                <div class="screen__texts mt-5 mx-auto text-center">
+                  <h3>Voice Capture</h3>
+                  <p class="mt-3">Anytime a beer is mentioned, it responds automatically.</p>
+                </div>
               </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6" style="overflow-y: hidden;">
               <img src="../../assets/img/screen2.png" height="600" width="300" alt="image" srcset=""
                 class="img-fluid white__rectangle popup wow flipInY" style="cursor: pointer;">
+              <div class="screen__texts mt-5">
+                <h3>Screen Capture Feature</h3>
+                <p class="mt-3">Able to scan to detect what beer you are taking at a particular time</p>
+              </div>
             </div>
           </div>
         </div>
@@ -189,10 +200,18 @@
             <div class="col-6 col-sm-6 col-md-6">
               <img src="../../assets/img/screen3.png" height="600" width="300" alt="image" srcset=""
                 class="img-fluid white__rectangle popup" style="cursor: pointer;">
+              <div class="screen__texts mt-5">
+                <h3>Manual Input Feature</h3>
+                <p class="mt-3">You can input you favourite beer for records.</p>
+              </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6">
               <img src="../../assets/img/screen4.png" height="600" width="300" alt="image" srcset=""
                 class="img-fluid white__rectangle popup" style="cursor: pointer;">
+              <div class="screen__texts mt-5">
+                <h3>BAC Calculation Feature</h3>
+                <p class="mt-3">Gets previous records of Alcohol taken and combines with the present.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -203,10 +222,18 @@
             <div class="col-6 col-sm-6 col-md-6">
               <img src="../../assets/img/screen5.png" height="600" width="300" alt="image" srcset=""
                 class="img-fluid white__rectangle popup" style="cursor: pointer;">
+              <div class="screen__texts mt-5">
+                <h3>Response</h3>
+                <p class="mt-3">Gives a feedback whether to proceed or withdraw from taking Alcohol.</p>
+              </div>
             </div>
             <div class="col-6 col-sm-6 col-md-6">
               <img src="../../assets/img/screen6.png" height="600" width="300" alt="image" srcset=""
                 class="img-fluid white__rectangle popup" style="cursor: pointer;">
+              <div class="screen__texts mt-5">
+                <h3>Games Feature</h3>
+                <p class="mt-3">All kinds of games to distract urges to take Alcohol.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -224,62 +251,57 @@
     </div>
     <!-- end of carousel -->
   </div>
-  <!-- end of product images section -->   
+</section>
+<!-- end of product images section -->
 
-  <!-- start of coming soon section -->
-  <section id="notify" class="mt-5 pt-3 scroll">
-    <div class="text-center wow bounceIn">
-      <h2 class="text-center" style="overflow: hidden;">Launch coming soon!</h2>
-      <p class="text-center mt-4 mx-auto">Sign up to get notified first</p>
-      <div class="">
-        <form [formGroup]="newsletterForm" (ngSubmit)="registerData()">
-          <div class="form-group text-center">
-            <input type="email" class="form-control mx-auto" formControlName="email" id="inputemail"
-              aria-describedby="emailHelp" placeholder="Email address">
-          </div>
-          <div class="text-center mt-5 button__div">
-            <button type="submit" class="btn btn-primary notify">Notify Me</button>
-          </div>
-        </form>
+<!-- start of coming soon section -->
+<section id="notify" class="mt-5 pt-3 scroll">
+  <div class="text-center wow bounceIn">
+    <h2 class="text-center" style="overflow: hidden;">Launch coming soon!</h2>
+    <p class="text-center mt-4 mx-auto">Sign up to get notified first</p>
+    <div class="">
+      <form [formGroup]="newsletterForm" (ngSubmit)="registerData()">
+        <div class="form-group text-center">
+          <input type="email" class="form-control mx-auto" formControlName="email" id="inputemail"
+            aria-describedby="emailHelp" placeholder="Email address">
+        </div>
+        <div class="text-center mt-5 button__div">
+          <button type="submit" class="btn btn-primary notify">Notify Me</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- end of coming soon section -->
+
+<!-- start of models sections -->
+<section id="modals">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-sm modal-dialog-centered mx-auto">
+      <div class="modal-content">
+        <img class="w-100 h-auto" id="popup-img" src="" alt="image" srcset="">
       </div>
     </div>
-  </section>
-  <!-- end of coming soon section -->
+  </div>
+</section>
+<!-- end of models section -->
 
-  <!-- start of models sections -->
-  <section id="modals">
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-sm modal-dialog-centered mx-auto">
-        <div class="modal-content">
-          <img class="w-100 h-auto" id="popup-img" src="" alt="image" srcset="">
-        </div>
-      </div>
+<!-- start of footer section -->
+<section id="footer">
+  <footer>
+    <div class="text-left">
+      <img src="../../assets/img/Logo3.png" alt="image" srcset="">
     </div>
-    <!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <img id="popup-img" src="" alt="image" srcset="">
-        </div>
-      </div>
-    </div> -->
-  </section>
-  <!-- end of models section -->
-
-  <!-- start of footer section -->
-  <section id="footer">
-    <footer>
-      <div class="text-left">
-        <img src="../../assets/img/Logo3.png" alt="image" srcset="">
-      </div>
-      <div class="hr ml-auto">
-        <hr align="center">
-      </div>
-      <div class="copyright">
-        <p class="mx-auto">
-          <span class="iconify" data-icon="bx:bx-copyright" data-inline="false"></span>
-          <span class="ml-4">2020 All rights reserved</span>
-        </p>
-      </div>
-    </footer>
-  </section>
-  <!-- end of footer section -->
+    <div class="hr ml-auto">
+      <hr align="center">
+    </div>
+    <div class="copyright">
+      <p class="mx-auto">
+        <span class="iconify" data-icon="bx:bx-copyright" data-inline="false"></span>
+        <span class="ml-4">2020 All rights reserved</span>
+      </p>
+    </div>
+  </footer>
+</section>
+<!-- end of footer section -->

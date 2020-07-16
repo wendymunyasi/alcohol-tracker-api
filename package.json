@@ -21,6 +21,7 @@
     "@angular/router": "~10.0.3",
     "@ngx-progressbar/core": "^3.0.2",
     "@ngx-progressbar/http-client": "^3.0.2",
+    "particles.js": "^2.0.0",
     "rxjs": "~6.5.5",
     "rxjs-compat": "^6.6.0",
     "sweetalert2": "^9.17.0",

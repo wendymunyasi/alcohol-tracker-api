@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../api.service';
 import Swal from 'sweetalert2';
+import { ParticlesConfig } from '../../assets/js/vendor-js/particles.js-master/particles';
+
+declare var particlesJS: any;
 
 
 @Component({
@@ -42,17 +45,21 @@ export class LandingComponent implements OnInit {
           alert(`The unknown error has occurred: ${error}`);
         }
       )
-      this.newsletterForm.reset();
+    this.newsletterForm.reset();
 
-      Swal.fire({
-        title: "Good job!",
-        text: "You email was posted! Check your inbox.",
-        icon: "success",
-      });
+    Swal.fire({
+      title: "Good job!",
+      text: "You email was posted! Check your inbox.",
+      icon: "success",
+    });
   }
 
 
-  ngOnInit(): void {
+  ngOnInit() {
+    // https://vincentgarreau.com/particles.js/
+    particlesJS('particles-js', ParticlesConfig, function () {
+      console.log('callback - particles.js config loaded');
+    });
   }
 
 } 
