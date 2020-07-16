@@ -366,12 +366,19 @@ section#footer .copyright {
     margin-top: 58px;
     margin-left: 2rem;
   }
+
+  section#hero__section img.beer__phone {
+    width: 60% !important;
+    margin-top: 8.5rem;
+
+  }
+
 }
 
 @media screen and (min-width:992px) {
 
   section#hero__section {
-    height: 100vh;
+    height: 100%;
   }
 
   section#hero__section img.beer__phone {
