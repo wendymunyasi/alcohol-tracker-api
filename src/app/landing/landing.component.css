@@ -37,7 +37,7 @@ body {
 /* start of hero section styles */
 section#hero__section {
   background-image: url('../../assets/img/hero_image.png');
-  height: 100vh;
+  height: 100vh !important;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -110,14 +110,6 @@ section#hero__section span.here {
   margin-left: .5rem;
 }
 
-
-@media screen and (min-width:992px) {}
-
-@media screen and (min-width:769px) {}
-
-@media screen and (max-width:768px) {}
-
-@media screen and (max-width:320px) {}
 
 /* end of hero setion styles */
 
@@ -354,9 +346,6 @@ section#footer p {
 section#footer .copyright {
   margin-top: 22px;
 }
-
-@media screen and (max-width:768px) {}
-
 /* end of footer section styles */
 
 
@@ -428,6 +417,7 @@ section#footer .copyright {
     text-align: center;
     color: #823F19;
     overflow: hidden;
+    margin-top: 0;
   }
 
   section#features1 {
