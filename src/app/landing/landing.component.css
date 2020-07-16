@@ -600,8 +600,13 @@ section#footer .copyright {
     align-items: center;
   }
 
+  section#notify p {
+    margin-bottom: 10%;
+    height: 40px;
+  }
+
   section#notify h2 {
-    height: 100% !important;
+    height: 45px !important;
   }
 
 }
