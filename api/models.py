@@ -5,7 +5,7 @@ import datetime
 class NewsLetterRecipient(models.Model):
 
     'A model for the newsletter recipients'
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     date_registered = models.DateTimeField(auto_now_add=True)
 
     class Meta:
