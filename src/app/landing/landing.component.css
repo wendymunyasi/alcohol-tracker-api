@@ -370,6 +370,10 @@ section#footer .copyright {
 
 @media screen and (min-width:992px) {
 
+  section#hero__section {
+    height: 100vh;
+  }
+
   section#hero__section img.beer__phone {
     width: 60% !important;
     margin-top: 8.5rem;
