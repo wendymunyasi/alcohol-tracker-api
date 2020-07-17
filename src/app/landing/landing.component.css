@@ -180,6 +180,14 @@ section#features2 .container-fluid .heading-underline {
   margin-top: 0.75rem;
 }
 
+section#features2 .container-fluid img.assistant__vector2,
+section#features2 .container-fluid img.challenges__vector2,
+section#features2 .container-fluid img.games__vector2,
+section#features2 .container-fluid img.screen__capture__vector2,
+section#features2 .container-fluid img.translation__vector2 {
+  display: none;
+}
+
 section#features2 .container-fluid p.paragraph1 {
   font-weight: normal;
   font-size: 25px;
@@ -191,14 +199,6 @@ section#features2 .container-fluid p.paragraph1 {
 section#features2 .container-fluid img {
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-section#features2 .container-fluid img.assistant__vector2,
-section#features2 .container-fluid img.challenges__vector2,
-section#features2 .container-fluid img.games__vector2,
-section#features2 .container-fluid img.screen__capture__vector2,
-section#features2 .container-fluid img.translation__vector2 {
-  display: none;
 }
 
 section#features2 .container-fluid h4 {
@@ -394,6 +394,89 @@ section#footer .copyright {
     width: 80% !important;
     margin-top: 8.5rem;
   }
+
+  section#hero__section h1 {
+    width: 70rem !important;
+    height: 100% !important;
+    font-size: 8rem !important;
+    line-height: 100% !important;
+  }
+
+  section#hero__section .heading-underline {
+    width: 5.375rem !important;
+  }
+
+  section#hero__section .hero__text1 p {
+    width: 60rem !important;
+    font-size: 3rem !important;
+    line-height: 100% !important;
+    height: 7rem !important;
+  }
+
+  section#hero__section .hero__text2 p {
+    font-size: 2.5rem !important;
+    margin-bottom: 5% !important;
+  }
+
+  section#features1 .card-title {
+    font-size: 2rem !important;
+    line-height: 26px;
+  }
+
+  section#features1 .card-text {
+    font-size: 1.8rem !important;
+    line-height: 100% !important;
+  }
+
+  section#features2 {
+    height: 100% !important;
+  }
+
+  section#features2 .container-fluid h3 {
+    font-size: 3rem !important;
+    line-height: 100% !important;
+  }
+
+  section#features2 .container-fluid .heading-underline {
+    width: 3rem !important;
+    height: .5rem !important;
+  }
+
+  section#features2 p.paragraph1 {
+    font-size: 2.5rem !important;
+    line-height: 110% !important;
+    height: 100% !important;
+  }
+
+  section#features2 .vectors img {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+
+  section#features2 .container-fluid h4 {
+    font-size: 2rem !important;
+    line-height: 110% !important;
+    height: 100% !important;
+  }
+
+  section#features2 .container-fluid p.paragraph2 {
+    font-size: 2rem !important;
+    line-height: 110% !important;
+    height: 100% !important;
+  }
+
+  section#product__images h2 {
+    font-size: 3rem !important;
+    line-height: 100% !important;
+  }
+
+  section#product__images p {
+    font-size: 2.5rem !important;
+    line-height: 110% !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
 
 }
 
@@ -695,7 +778,8 @@ section#footer .copyright {
   }
 
   section#features1 .features__logo__text img {
-    width: 132px;
+    width: 60%;
+    height: auto;
   }
 
   section#features1 .card {
@@ -996,7 +1080,7 @@ section#footer .copyright {
 @media screen and (max-width:500px) {
 
   section#hero__section img.logo {
-    margin-top:10%
+    margin-top: 10%
   }
 
   /* section#hero__section .coming-soon {
@@ -1012,7 +1096,7 @@ section#footer .copyright {
 
 
 @media screen and (max-width:320px) {
-  
+
   section#hero__section h1 {
     width: 100%;
     font-weight: 600;
@@ -1022,13 +1106,31 @@ section#footer .copyright {
   section#hero__section .hero__text1 p {
     width: 100%;
     font-weight: normal;
-    font-size: 12px;
+    font-size: .7rem;
+  }
+
+  section#hero__section .hero__text2 p {
+    font-size: .7rem;
+    line-height: 106.69%;
+  }
+
+
+  section#features1 .features__logo__text img {
+    width: 40%;
   }
 
   section#features1 h1 {
     text-align: center !important;
     font-size: 5px !important;
     margin-top: 4%;
+  }
+
+  section#features1 span {
+    font-size: .7rem;
+  }
+
+  section#features1 .card {
+    height: 80%;
   }
 
   section#features1 .card img {
@@ -1044,16 +1146,16 @@ section#footer .copyright {
   }
 
   section#features1 .card-text {
-    font-size: 15px;
+    font-size: .8rem;
     line-height: 96.19%;
     min-height: 135px;
   }
 
   section#features2 .container-fluid h4 {
-    font-size: 13px;
-    line-height: 96.19%;
+    font-size: .8rem;
+    line-height: 110%;
     font-weight: 600;
-    height: 21px !important;
+    height: 100%;
   }
 
   section#features2 .container-fluid h3 {
@@ -1061,12 +1163,13 @@ section#footer .copyright {
   }
 
   section#features2 .container-fluid p.paragraph1 {
-    font-size: 15px;
+    font-size: .8rem;
     line-height: 96.19%;
+    height: 100%;
   }
 
   section#features2 .container-fluid p.paragraph2 {
-    font-size: 13px;
+    font-size: .6rem;
   }
 
   input {
@@ -1079,7 +1182,7 @@ section#footer .copyright {
   }
 
   section#product__images p {
-    font-size: 15px;
+    font-size: .8rem;
     line-height: 96.19%;
     width: 100%;
   }
@@ -1107,6 +1210,10 @@ section#footer .copyright {
     padding-top: 0 !important;
   }
 
+  section #notify h2 {
+    font-size: .5rem !important;
+  }
+
   section#notify p {
     font-size: 15px;
     line-height: 96.19%;
@@ -1116,7 +1223,7 @@ section#footer .copyright {
   }
 
   input {
-    width: 290px;
+    width: 70% !important;
     height: 24px;
     background-color: #FBF3EB;
     border-color: #CDCDCD;
