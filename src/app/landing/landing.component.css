@@ -10,6 +10,7 @@
   font-style: normal !important;
   overflow-x: hidden !important;
   /* outline: 1px solid red; */
+  right: 0;
 }
 
 
@@ -36,7 +37,7 @@ body {
 
 /* start of hero section styles */
 section#hero__section {
-  background-image: url('../../assets/img/hero__image.png');
+  background-image: url('../../assets/img/hero__image2.png');
   height: 100vh !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,6 +45,7 @@ section#hero__section {
   object-position: 50% 50%;
   background-position: center center;
 }
+
 
 section#hero__section img.logo {
   margin-top: 58px;
@@ -614,6 +616,12 @@ section#footer .copyright {
 }
 
 @media screen and (max-width:768px) {
+
+  section#hero__section .coming-soon {
+    height: 30%;
+    width: 30%;
+  }
+
   section#hero__section img.logo {
     width: 132px;
     margin-top: 40px;
@@ -986,6 +994,16 @@ section#footer .copyright {
 
 
 @media screen and (max-width:500px) {
+
+  section#hero__section img.logo {
+    margin-top:10%
+  }
+
+  /* section#hero__section .coming-soon {
+    height: 30%;
+    width: 30%;
+  } */
+
   section#features1 .card {
     height: 23.313rem;
     width: auto;
@@ -994,6 +1012,7 @@ section#footer .copyright {
 
 
 @media screen and (max-width:320px) {
+  
   section#hero__section h1 {
     width: 100%;
     font-weight: 600;
