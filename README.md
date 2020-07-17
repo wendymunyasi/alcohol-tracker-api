@@ -20,7 +20,7 @@ You need to install the following software to have the app running on your local
 |Pip|pip install --upgrade pip|
 |Virtual Environment|1. pip install pipenv|
 |   |2. Activate by running: pipenv shell|
-|Django 3.0|Pipenv install Django|
+|Django 3.0|pipenv install Django|
 |All other dependencies| pipenv install --dev|
 
 
