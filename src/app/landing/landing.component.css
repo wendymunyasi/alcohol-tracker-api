@@ -1283,4 +1283,149 @@ section#footer .copyright {
   }
 }
 
+@media screen and (max-width:200px) {
+
+  section#hero__section img.logo {
+    width: 80%;
+  }
+
+  section#hero__section h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: .5rem;
+  }
+
+  section#hero__section img.beer__phone {
+    width: 40%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  section#hero__section .heading-underline {
+    width: 10%;
+    height: 40;
+    margin-top: 5%;
+  }
+
+  section#hero__section .hero__text1 p {
+    width: 100%;
+    font-size: .5rem;
+    line-height: 100%;
+    height: 100%;
+    margin-top: 8%;
+    overflow: hidden;
+  }
+
+  section#hero__section .hero__text2 p {
+    font-weight: 300;
+    font-size: .5rem;
+    line-height: 100%;
+    height: 100%;
+    text-align: center;
+    color: #823F19;
+    overflow: hidden;
+  }
+
+  section#features1 span {
+    font-weight: normal;
+    font-size: .5rem;
+    width: 100%;
+    line-height: 96.19%;
+    color: #643F19;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section#features1 .card-text {
+    font-size: .5rem;
+    line-height: 100%;
+    height: 100%;
+
+  }
+
+  section#features2 .container-fluid h3 {
+    font-size: .6rem;
+  }
+
+  section#features2 .container-fluid p.paragraph1 {
+    font-size: .6rem;
+    line-height: 96.19%;
+    height: 100%;
+  }
+
+  section#features2 .container-fluid img {
+    height: 50%;
+    width: 50%;
+  }
+
+  section#features2 .container-fluid h4 {
+    font-size: .6rem;
+  }
+
+  section#features2 .container-fluid p.paragraph2 {
+    font-size: .5rem;
+  }
+
+  section#product__images h2 {
+    font-size: .6rem;
+    line-height: 96.19%;
+  }
+
+  section#product__images p {
+    font-size: .4rem;
+    line-height: 96.19%;
+    width: 100%;
+  }
+
+  section#product__images img {
+    width: 3rem;
+    height: auto;
+  }
+
+  section#product__images .screen__texts h3 {
+    font-weight: 600;
+    font-size: .5rem;
+    line-height: 96.19%;
+    color: #E08114;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  section#product__images .screen__texts p {
+    font-weight: normal;
+    font-size: .4rem;
+    line-height: 96.19%;
+    color: #EB9B40;
+    margin-top: 0;
+  }
+
+  section#notify h2 {
+    font-size: .5rem 
+  }
+
+  section#notify p {
+    font-size: .4rem;
+    line-height: 96.19%;
+    margin-top: 0.625rem !important;
+    height: 19px;
+    margin-bottom: 45px;
+  }
+
+  section#notify input {
+    width: 60% !important;
+    height: 10% !important ;
+    background-color: #FBF3EB;
+    border-color: #CDCDCD;
+  }
+
+  ::placeholder {
+    font-size: .2rem !important;
+    line-height: 96.19%;
+    margin-left: 5rem;
+    padding-left: 1rem;
+  }
+
+}
+
 /* END OF MEDIA QUERIS */
