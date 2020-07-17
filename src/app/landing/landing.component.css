@@ -38,7 +38,7 @@ body {
 /* start of hero section styles */
 section#hero__section {
   background-image: url('../../assets/img/hero__image2.png');
-  height: 100vh !important;
+  height: 100% !important;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
