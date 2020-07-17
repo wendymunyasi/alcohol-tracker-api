@@ -34,6 +34,10 @@ body {
   padding-right: 5%;
 }
 
+.wow {
+  animation-duration: 2s;
+}
+
 
 /* start of hero section styles */
 section#hero__section {
