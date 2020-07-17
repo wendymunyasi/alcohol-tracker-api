@@ -416,6 +416,8 @@ section#footer .copyright {
   section#hero__section .hero__text2 p {
     font-size: 2.5rem !important;
     margin-bottom: 5% !important;
+    height: 130% !important;
+    line-height: 110% !important;
   }
 
   section#features1 .card-title {
