@@ -50,7 +50,7 @@ export class LandingComponent implements OnInit {
         error => {
           Swal.fire({
             title: "Hold on!",
-            text: "That email was already registed. Try another email.",
+            text: "That email was already registered. Try another email. :) ",
             icon: "warning",
           });
           console.log(error)
