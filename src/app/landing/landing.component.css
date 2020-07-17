@@ -1085,14 +1085,14 @@ section#footer .copyright {
     margin-top: 10%
   }
 
-  /* section#hero__section .coming-soon {
-    height: 30%;
-    width: 30%;
-  } */
-
   section#features1 .card {
     height: 23.313rem;
     width: auto;
+  }
+
+  section#product__images .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none !important;
   }
 }
 
@@ -1187,6 +1187,11 @@ section#footer .copyright {
     font-size: .8rem;
     line-height: 96.19%;
     width: 100%;
+  }
+
+  section#product__images img {
+    width: 5rem;
+    height: auto;
   }
 
   section#product__images .screen__texts h3 {
