@@ -36,7 +36,7 @@ body {
 
 /* start of hero section styles */
 section#hero__section {
-  background-image: url('../../assets/img/hero_image.png');
+  background-image: url('../../assets/img/hero__image.png');
   height: 100vh !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -359,6 +359,8 @@ section#footer p {
   font-size: 20px;
   line-height: 96.19%;
   color: #D6D6D6;
+  align-items: secter;
+  text-align: center;
 }
 
 section#footer .copyright {
@@ -620,6 +622,7 @@ section#footer .copyright {
 
   section#hero__section .row {
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   section#hero__section .hero__text1 {
@@ -938,7 +941,7 @@ section#footer .copyright {
 
   section#footer {
     height: 100%;
-    background: #FBF3EB;
+    /* background: #FBF3EB; */
   }
 
   section#footer .iconify {
@@ -957,20 +960,28 @@ section#footer .copyright {
 
 
   section#footer img {
-    display: none;
+    width: 20%;
+    margin-top: 5%;
+  }
+
+  section#footer p {
+    margin-bottom: 3%;
   }
 
   section#footer hr {
     /* color: #ffff; */
-    width: 14.688rem;
+    width: 40%;
     height: 0px;
-    border: 0.1px solid #E08114;
-    margin-top: 1%;
-
+    margin-top: 2%;
+    margin-bottom: 0%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+section#footer .copyright {
+  margin-top: .5rem;
+}  
 }
 
 
@@ -1105,18 +1116,14 @@ section#footer .copyright {
   }
 
   section#footer {
-    height: 3rem;
-    background: #FBF3EB;
+    height: 100%;
     overflow: hidden;
   }
 
-  section#footer img {
-    display: none;
-  }
 
   section#footer hr {
     margin-top: 0%;
-    width: 235px;
+    width: 40%;
   }
 
   section#footer .iconify {
