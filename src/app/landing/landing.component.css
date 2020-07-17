@@ -257,7 +257,7 @@ section#product__images .carousel-indicators li {
   background-color: #C4C4C4;
   border-radius: 50%;
   width: 14px;
-height: 14px;
+  height: 14px;
 }
 
 section#product__images .carousel-control-prev-icon,
@@ -877,7 +877,7 @@ section#footer .copyright {
     height: 100%;
     margin-top: 0;
   }
-  
+
   section#product__images .screen__texts p {
     font-weight: normal;
     font-size: 10px;
@@ -979,9 +979,17 @@ section#footer .copyright {
     margin-right: auto;
   }
 
-section#footer .copyright {
-  margin-top: .5rem;
-}  
+  section#footer .copyright {
+    margin-top: .5rem;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  section#features1 .card {
+    height: 23.313rem;
+    width: auto;
+  }
 }
 
 
@@ -1065,7 +1073,7 @@ section#footer .copyright {
     height: 100%;
     margin-top: 0;
   }
-  
+
   section#product__images .screen__texts p {
     font-weight: normal;
     font-size: 10px;
