@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../api.service';
 import Swal from 'sweetalert2';
-import { ParticlesConfig } from '../../assets/js/vendor-js/particles.js-master/particles';
 
 declare var particlesJS: any;
 
@@ -39,27 +38,31 @@ export class LandingComponent implements OnInit {
 
     this.apiService.createRecipient(this.newsletterForm.get('email').value)
       .then(
-        response => console.log(response)
+        response => {
+          Swal.fire({
+            title: "Good job!",
+            text: "You email was posted! Check your inbox.",
+            icon: "success",
+          });
+          console.log(response)
+        }
       ).catch(
         error => {
-          alert(`The unknown error has occurred: ${error}`);
+          Swal.fire({
+            title: "Hold on!",
+            text: "That email was already registed. Try another email.",
+            icon: "warning",
+          });
+          console.log(error)
         }
       )
     this.newsletterForm.reset();
 
-    Swal.fire({
-      title: "Good job!",
-      text: "You email was posted! Check your inbox.",
-      icon: "success",
-    });
+    
   }
 
 
-  ngOnInit() {
-    // https://vincentgarreau.com/particles.js/
-    particlesJS('particles-js', ParticlesConfig, function () {
-      console.log('callback - particles.js config loaded');
-    });
-  }
-
-} 
+  ngOnInit() {}
+  
+  
+}
