@@ -1,8 +1,8 @@
 <ng-progress></ng-progress>
 
 <!-- start of hero section -->
-<section id="hero__section" class="scroll px-3" style="overflow: hidden;">
-  <div class="coming-soon d-flex align-items-end flex-column bd-highlight mb-3 ml-auto wow slideInRight" style="background: transparent; position: absolute;">
+<section id="hero__section" class="scroll px-3" style="overflow: hidden; pointer-events: none !important;">
+  <div class="coming-soon d-flex align-items-end flex-column bd-highlight mb-3 ml-auto wow slideInRight" style="background: transparent; position: absolute; z-index: 1; pointer-events: none;">
     <img src="../../assets/img/coming_soon3.png" class="img-fluid" alt="" srcset="" width="300" height="300">
   </div>
   <div class="container-fluid mx-auto" style="overflow-y: hidden; z-index: -1; position: relative;">
@@ -16,7 +16,7 @@
         </div>
         <div class="hero__text2 wow bounceIn">
           <p>Be the first to get notified on app release <span class="here"><a href="#notify" class="here2"
-                style="color: #643F19; cursor: pointer;">
+                style="color: #643F19; cursor: pointer; pointer-events: none;">
                 here</a></span> </p>
         </div>
       </div>
