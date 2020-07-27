@@ -17,7 +17,7 @@ This is a website for a future app that one can use to track their alcohol consu
     8. Make a Pull request for the master branch. 
 
 ## Design
-    (https://www.figma.com/file/Rg1eRuZu3g7lkDczrLuSP9/supertrack?node-id=15%3A0)
+    https://www.figma.com/file/Rg1eRuZu3g7lkDczrLuSP9/supertrack?node-id=15%3A0
 
 
 ##  Deployment
