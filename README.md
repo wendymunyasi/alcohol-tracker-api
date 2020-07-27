@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
-This is a website to show case a photographer's portfolio.
+This is a website for a future app that one can use to track their alcohol consumption.
 
 
 
