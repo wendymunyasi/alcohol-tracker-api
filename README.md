@@ -5,8 +5,7 @@ This is an API for storing client's email address for an Alcohol Tracker app and
 
 ## Links
 
-* **API link** - https://alcohol-tracker-db-api.herokuapp.com/api/
-* **Website link** - https://alcohol-tracker-db-api.herokuapp.com/api/newsletter_recipients2/
+* **Website link for viewing recipients** - https://alcohol-tracker-db-api.herokuapp.com/api/newsletter_recipients2/
 
 
 ###  Prerequisites and Installing
